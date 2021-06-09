@@ -2,7 +2,8 @@
 Step-by-step tutorial on getting started with Python in MacOS Big Sur
 
 ## Summary
-Python3 --> comes with MacOS Big Sur
+- Python3 --> comes with MacOS Big Sur --> BUT STILL INSTALL AGAIN WITH HOMEBREW!!!
+  - Homebrew python3 installation also installs setuptools and wheel (very important!)
 HomeBrew (which also installs Xcode Command Line Tools)
   |_ pip3
   |_
@@ -43,11 +44,8 @@ HomeBrew (which also installs Xcode Command Line Tools)
   - For these changes to activate, in the Terminal window, type:
     - `source ~/.bash_profile`
 
-
-
-
-- [a] VSCode
+- [4] Install VSCode & extensions
   - Install `Python extension for Visual Studio Code`
-  - Select Python Interpreter -> `Python 3.8.2 64-bit, /usr/bin/python3`
+  - Select Python Interpreter -> `Python 3.9.5 64-bit, /usr/local/bin/python3` (path /usr/local/bin... is important!!!)
   - Install packages by :
-    - `pip3 install --user package-name` ("--user" is important here!)
+    - `pip3 install package-name`
