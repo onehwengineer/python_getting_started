@@ -1,23 +1,16 @@
 ## python_getting_started
 Step-by-step tutorial on getting started with Python in MacOS Big Sur
 
-## Summary
+## IMPORTANT!!!
 - Python3 --> comes with MacOS Big Sur --> BUT STILL INSTALL AGAIN WITH HOMEBREW!!!
   - Homebrew python3 installation also installs setuptools and wheel (very important!)
-HomeBrew (which also installs Xcode Command Line Tools)
-  |_ pip3
-  |_
 
-
-- [0] Check if **Python3** is already installed
-  - In Terminal, `python3 —version`
-  - If Python3 is installed, it will show the version. If not, an error.
-
+## STEP-BY-STEP INSTALLATION
 - [1] Install **Xcode** (along with **Command Line Tools** and **Git**)
   - Check if Xcode is already installed. In Terminal, `- xcode-select -p`
     - If directory exists, Xcode is installed   
     - If not, install Xcode from App Store
-  - Check if Git installed : `git --version`
+  - Git is installed with Xcode. Check if Git installed : `git --version`
   - **Xcode Command Line Tools** will be installed in step [2]
 
 - [2] Install **Homebrew** (& **Command Line Tools**)
@@ -32,7 +25,7 @@ HomeBrew (which also installs Xcode Command Line Tools)
     - Confirm installation by `xcode-select -p` -> Directory will show up (.../CommandLineTools)
 
 - [3] Install **Python3**
-  - ```brew install python```
+  - ```brew install python3```
   - Along with Python 3, Homebrew will install **pip3**, **setuptools**, and **wheel**
     - (TO UPGRADE : `brew upgrade` + `brew upgrade python3`)
   - Place Homebrew directory at the top of the PATH environment variable
@@ -44,7 +37,7 @@ HomeBrew (which also installs Xcode Command Line Tools)
   - For these changes to activate, in the Terminal window, type:
     - `source ~/.bash_profile`
 
-- [4] Install VSCode & extensions
+- [4] (OPTIONAL) Install VSCode & extensions
   - Install `Python extension for Visual Studio Code`
   - Select Python Interpreter -> `Python 3.9.5 64-bit, /usr/local/bin/python3` (path /usr/local/bin... is important!!!)
   - Install packages by :
