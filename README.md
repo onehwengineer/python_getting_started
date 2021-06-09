@@ -1,6 +1,13 @@
 ## python_getting_started
 Step-by-step tutorial on getting started with Python in MacOS Big Sur
 
+## Summary
+Python3 --> comes with MacOS Big Sur
+HomeBrew (which also installs Xcode Command Line Tools)
+  |_ pip3
+  |_
+
+
 - [0] Check if **Python3** is already installed
   - In Terminal, `python3 —version`
   - If Python3 is installed, it will show the version. If not, an error.
@@ -25,5 +32,22 @@ Step-by-step tutorial on getting started with Python in MacOS Big Sur
 
 - [3] Install **Python3**
   - ```brew install python```
-  - Along with Python 3, Homebrew will install pip3, setuptools and wheel
-  - TO UPGRADE : `brew upgrade` + `brew upgrade python3`
+  - Along with Python 3, Homebrew will install **pip3**, **setuptools**, and **wheel**
+    - (TO UPGRADE : `brew upgrade` + `brew upgrade python3`)
+  - Place Homebrew directory at the top of the PATH environment variable
+  - This will ensure that Homebrew installations will be called over the tools that Mac OS X may select automatically that could run counter to the development environment we’re creating.
+  - You should create or open the ~/.bash_profile file with the command-line text editor nano using the nano command:
+    - `vi ~/.bash_profile`
+  - Once the file opens up in the Terminal window, write the following:
+    - `export PATH=/usr/local/bin:$PATH`
+  - For these changes to activate, in the Terminal window, type:
+    - `source ~/.bash_profile`
+
+
+
+
+- [a] VSCode
+  - Install `Python extension for Visual Studio Code`
+  - Select Python Interpreter -> `Python 3.8.2 64-bit, /usr/bin/python3`
+  - Install packages by :
+    - `pip3 install --user package-name` ("--user" is important here!)
